@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+    
 </head>
 <body>
     
@@ -15,7 +15,8 @@
 
          <div class="img"></div>
          <div class="saldo_atual">
-             <h3>Olá, nome_pessoal! <br> Seja Bem vindo</h3>
+             <h3>Olá!</h3>
+             <h3> seja Bem-vindo !</h3>
              <h5>Seu saldo atual</h5>
              <p>R$ 0.00</p>
          </div>
@@ -26,27 +27,29 @@
 
          <div class="add-withdraw">
              <div class="add">
-                 <p>Total Retirado</p>
-                 <p>-R$ 0.00</p>
+                 <h4>Total Adicionado</h4>
+                 <p>R$ 0.00</p>
              </div>
 
 
              <div class="withraw">
-                 <p>Total Adicionado</p>
-                 <p>R$ 0.00</p>
+                 <h4>Total Retirado</h4>
+                 <p>-R$ 0.00</p>
              </div>
          </div>
 
          <div class="buttons">
-             <h4>O que está pensando agora nome_pessoal?</h4>
+             <h5>O que está pensando agora nome_pessoal?</h5>
              <div class="button-Add-withdraw">
-               <button>Adicionar</button>
-               <button>Retirar</button>
+               <button onclick="Adicionar()">Adicionar</button>
+               <button onclick="Retirar()">Retirar</button>
              </div>
          </div>
 
       </main>
    </section> 
 
+
+   <script src="app.js"></script>
 </body>
 </html>
