@@ -46,3 +46,17 @@ header > div{
 main > div{
     margin:0.3rem 0;
 }
+
+.saldo_atual > h3 {
+    margin: 0.4rem;
+}
+
+.buttons{
+    margin-top:0.6rem;
+}
+
+.button-Add-withdraw > button{
+    margin: 0.9rem 0.3rem;
+    width: 70px;
+    height: 30px;
+}
