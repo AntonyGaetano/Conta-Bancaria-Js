@@ -6,6 +6,7 @@ var valorRetirado = 0;
 var valor_atual = 0;
 var valorAdicionado = 0
 
+
 function Adicionar(){
   let valor = prompt("Quanto irá adicionar?");
   valorAdicionado = Number(valorAdicionado) + Number(valor);
@@ -32,12 +33,3 @@ function SaldoAtual(){
   document.querySelectorAll(".saldo_atual p")[0].innerHTML = "R$" + valor_atual
 }
 
-
-function Inicia(){
-nome = prompt("Qual seu nome? ");
-  
-h3[0].innerHTML = "Olá, " + (nome == "" ? "" : nome)
-}
-
-
-window.addEventListener("load", Inicia());
