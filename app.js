@@ -18,7 +18,7 @@ function Adicionar(){
 
 
 function Retirar(){
-  let valor = prompt("Quanto irá retirar?");
+  let valor2 = prompt("Quanto irá retirar?");
   valorRetirado = Number(valorAdicionado) + Number(valor);
   
   document.querySelectorAll(".withraw p")[0].innerHTML="-R$" + valorRetirado;
