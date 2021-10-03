@@ -1,7 +1,7 @@
 *{padding:0; margin:0; box-sizing:border-box;}
 
 #container{
-    width: 80%;
+    width: 65%;
     height: min-content;
     border: 1px solid black;
     display: flex;
@@ -9,36 +9,34 @@
     justify-content: space-evenly;
     align-items: center;
     margin: auto;
+    background-color: rgb(16, 212, 131);
 }
 
 .img{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border:1px solid;
     border-radius: 50%;
     background-color: white;
 }
 
 header{
- border:1px solid;
  text-align: center;
  display: flex;
- justify-content: space-evenly;
+ justify-content: space-around;
  align-items: center;
- height: 300px;
+ height: 200px;
  width: 100%;
- background-color: #f0dd11;
+
 }
 
-main{
-    border:1px solid;  
+main{  
     width: 100%;
     text-align: center;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 300px;
-    background-color: #ff0059;
+    height: 200px;
 }
 
 header > div{
@@ -55,6 +53,25 @@ main > div{
 
 .buttons{
     margin-top:0.6rem;
+}
+
+.buttons > h5{
+    margin-top:0.6rem;
+    font-size: 1rem;
+}
+
+.add-withdraw > div{
+   margin: 1rem 0;
+}
+
+.add-withdraw > div > h4{
+    font-size: 1.1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.add-withdraw > div > p{
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .button-Add-withdraw > button{

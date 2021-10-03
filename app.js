@@ -2,31 +2,36 @@
 var h3 = document.querySelectorAll("h3");
 
 var nome;
-var valor_add = 0;
-var valor_ret = 0;
+var valorRetirado = 0;
 var valor_atual = 0;
+var valorAdicionado = 0
 
 function Adicionar(){
-  valor_add = prompt("Quanto irá adicionar?");
+  let valor = prompt("Quanto irá adicionar?");
+  valorAdicionado = Number(valorAdicionado) + Number(valor);
 
-  document.querySelectorAll(".add p")[0].innerHTML="R$" + valor_add;
+  document.querySelectorAll(".add p")[0].innerHTML = "R$" + valorAdicionado;
 
   SaldoAtual();
 }
 
-function SaldoAtual(){
-    valor_atual = valor_add - valor_ret;
-
-    document.querySelectorAll(".saldo_atual p")[0].innerHTML = "R$" + valor_atual
-}
 
 function Retirar(){
-  valor_ret = prompt("Quanto irá retirar?");
+  let valor = prompt("Quanto irá retirar?");
+  valorRetirado = Number(valorAdicionado) + Number(valor);
   
-  document.querySelectorAll(".withraw p")[0].innerHTML="-R$" + valor_ret;
+  document.querySelectorAll(".withraw p")[0].innerHTML="-R$" + valorRetirado;
 
   SaldoAtual();
 }
+
+
+function SaldoAtual(){
+  valor_atual = valorAdicionado - valorRetirado;
+
+  document.querySelectorAll(".saldo_atual p")[0].innerHTML = "R$" + valor_atual
+}
+
 
 function Inicia(){
 nome = prompt("Qual seu nome? ");
